@@ -37,7 +37,7 @@ a {
 
 }
 
-.degree:hover {
+.degree:hover, .job:hover {
   background-color: aquamarine;
   border-radius: 25px;
 }
