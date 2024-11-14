@@ -1,0 +1,58 @@
+.mainpage {
+  display: flex;
+}
+
+.sidebar{
+ margin-right: 10em;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.programming-img>img {
+  height: 10em;
+  margin-left: 1em;
+}
+
+.job-header, .degree-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-header>h2, .degree-header>h2 {
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.company-name, .school-name {
+  margin-top: 0;
+}
+.degree, .job {
+  padding: 1em;
+
+}
+
+.degree:hover {
+  background-color: aquamarine;
+  border-radius: 25px;
+}
+
+.has_link {
+  cursor: pointer; 
+}
+
+.skills {
+  display: flex;
+}
+.skill {
+  border: 1px solid black;
+  padding: 0.5em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  border-radius: 25px;
+}
