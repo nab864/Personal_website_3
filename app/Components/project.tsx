@@ -1,14 +1,16 @@
 "use client";
 
+interface ProjectProps {
+  title: string;
+  img: string;
+  url: string;
+}
+
 export default function Project({
   title,
   img,
   url,
-}: {
-  title: string;
-  img: string;
-  url: string;
-}) {
+}: ProjectProps) {
   const handleOnClick = () => {
     window.open(url, "_blank")?.focus();
   };

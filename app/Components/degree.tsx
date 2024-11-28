@@ -3,17 +3,19 @@
 import { headers } from "next/headers";
 import { useRouter } from "next/navigation";
 
+interface DegreeProps {
+  title: string;
+  dates: string;
+  school: string;
+  url: string;
+}
+
 export default function Degree({
   title,
   dates,
   school,
   url,
-}: {
-  title: string;
-  dates: string;
-  school: string;
-  url: string;
-}) {
+}: DegreeProps) {
   const router = useRouter();
 
   const handleOnClick = () => {

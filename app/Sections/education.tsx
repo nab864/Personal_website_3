@@ -2,7 +2,7 @@ import Degree from "../Components/degree";
 
 export default function Education() {
   return (
-    <div className="education">
+    <div className="education" id="education">
       <h1>Education</h1>
       <Degree
         title="Fullstack Software Development"

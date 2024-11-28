@@ -2,7 +2,7 @@ import Job from "../Components/job";
 
 export default function Experience() {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="experience">
       <h1>Experience</h1>
       <Job
         title={["Research Assistant"]}

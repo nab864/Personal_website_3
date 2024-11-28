@@ -6,13 +6,16 @@ export default function Sidebar() {
     <div className="sidebar">
       <h1>Kai Fuller</h1>
       <div className="sidebar-links">
-        <Link href={"/"}>
-          <Button text="Home" />
-        </Link>
-        <Link href={"/about"}>
+        <Link href={"#about"}>
           <Button text="About" />
         </Link>
-        <Link href={"/portfolio"}>
+        <Link href={"#education"}>
+          <Button text="Education" />
+        </Link>
+        <Link href={"#experience"}>
+          <Button text="Experience" />
+        </Link>
+        <Link href={"#portfolio"}>
           <Button text="Portfolio" />
         </Link>
       </div>

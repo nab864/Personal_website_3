@@ -1,5 +1,14 @@
 "use client";
 
+interface JobProps {
+  title: string[];
+  employmentDates: string[];
+  companyName: string;
+  jobDescription: string[][];
+  jobSkills: string[];
+  url: string;
+}
+
 export default function Job({
   title,
   employmentDates,
@@ -7,14 +16,7 @@ export default function Job({
   jobDescription,
   jobSkills,
   url,
-}: {
-  title: string[];
-  employmentDates: string[];
-  companyName: string;
-  jobDescription: string[][];
-  jobSkills: string[];
-  url: string;
-}) {
+}: JobProps) {
   const handleOnClick = () => {
     if (url) {
       window.open(url, "_blank")?.focus();
@@ -22,22 +24,16 @@ export default function Job({
   };
   return (
     <div className={`job${url ? " has_link" : ""}`} onClick={handleOnClick}>
-      {title.map((currentTitle, index) => {
-          return (
-            <>
-              <div className="job-header">
-                <h2>{title[index]}</h2>
-                <h2>{employmentDates[index]}</h2>
-              </div>
-              <h3 className="company-name">{companyName}</h3>
-              <ul>
-                {jobDescription[index].map((job) => {
-                  return <li>{job}</li>;
-                })}
-              </ul>
-            </>
-          )
+      <div className="job-header">
+        <h2>{title}</h2>
+        <h2>{employmentDates}</h2>
+      </div>
+      <h3 className="company-name">{companyName}</h3>
+      <ul>
+        {jobDescription.map((job, index) => {
+          return <li key={index}>{job}</li>;
         })}
+      </ul>
       <div className="skills">
         {jobSkills.map((skill) => {
           return <div className="skill">{skill}</div>;
