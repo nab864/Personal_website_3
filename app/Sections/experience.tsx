@@ -2,7 +2,7 @@ import Job from "../Components/job";
 
 export default function Experience() {
   return (
-    <div className="portfolio" id="experience">
+    <div className="experience section" id="experience">
       <h1>Experience</h1>
       <Job
         title={["Research Assistant"]}
@@ -34,7 +34,10 @@ export default function Experience() {
       />
       <Job
         title={["Chemist II", "R&D Chemist"]}
-        employmentDates={["October 2021 - February 2022", "January 2018 - September 2021"]}
+        employmentDates={[
+          "October 2021 - February 2022",
+          "January 2018 - September 2021",
+        ]}
         companyName="Access Sensor Technologies"
         jobDescription={[
           [
@@ -45,10 +48,15 @@ export default function Experience() {
           [
             "Enhanced and expanded manufacturing of On-Target® microfluidic paper analytical device (µPAD) technologies: reagent ink printing, printer modification and assembly, and assay development for the detection of various metals in aqueous samples.",
             "Directed production of a field kit to characterize heavy metal pollution in soils, coordinating across teams to validate methods and create a prototype. Optimized electrochemical methods for point-of-use detection (cyclic and square wave anodic/cathodic stripping voltammetries) to lower limits of detection and prepare a simple-to-use product.",
-            "Improved the manufacturing of carbon electrodes to be used by internal teams, reaching a 95% manufacturing throughput success rate."
+            "Improved the manufacturing of carbon electrodes to be used by internal teams, reaching a 95% manufacturing throughput success rate.",
           ],
         ]}
-        jobSkills={["Data Analysis", "Electrochemistry", "Product Development", "Image Analysis"]}
+        jobSkills={[
+          "Data Analysis",
+          "Electrochemistry",
+          "Product Development",
+          "Image Analysis",
+        ]}
         url="https://www.accsensors.com/"
       />
     </div>

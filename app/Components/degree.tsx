@@ -1,6 +1,4 @@
 "use client";
-
-import { headers } from "next/headers";
 import { useRouter } from "next/navigation";
 
 interface DegreeProps {

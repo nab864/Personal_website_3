@@ -1,56 +1,92 @@
+:root {
+  --main-bg-color: #1b2320;
+  --side-bg-color: #303835;
+  --section-bg-color: #464d4b;
+  --skill-bg-color: #5e6462;
+  --text-color: #909593;
+}
+
 html {
   scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
 }
 
 .mainpage {
   display: flex;
+  margin-left: 160px;
+}
+.mainsection {
+  margin-top: 50px;
 }
 
-.sidebar{
- margin-right: 10em;
+.sidebar {
+  background-color: var(--side-bg-color);
+  margin-right: 10em;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
-
 .sidebar-links {
   display: flex;
   flex-direction: column;
   text-align: right;
 }
+.link {
+  margin-top: 10px;
+}
+button {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  border: none;
+  /* border-radius: 10px; */
+  padding: 5px;
+}
+button:hover {
+  background-color: var(--skill-bg-color);
+}
 
-.programming-img>img {
+.programming-img{
+  text-align: center;
+}
+.programming-img > img {
   height: 10em;
   margin-left: 1em;
 }
 
-.job-header, .degree-header {
+.job-header,
+.degree-header {
   display: flex;
   justify-content: space-between;
 }
 
-.job-header>h2, .degree-header>h2 {
+.job-header > h2,
+.degree-header > h2 {
   margin: 0;
 }
-a {
-  color: black;
-  text-decoration: none;
-}
-.company-name, .school-name {
+
+.company-name,
+.school-name {
   margin-top: 0;
 }
-.degree, .job {
+.degree,
+.job {
   padding: 1em;
 }
 
-.degree-header > h2, .degree > h3 {
-  cursor: default;
-}
-
-.degree:hover, .job:hover {
-  background-color: aquamarine;
+.degree:hover,
+.job:hover {
+  background-color: var(--section-bg-color);
   border-radius: 25px;
 }
 
-.has_link {
-  cursor: pointer; 
+.has_link, button {
+  cursor: pointer;
 }
 
 .skills {
@@ -62,6 +98,9 @@ a {
   margin-left: 0.25em;
   margin-right: 0.25em;
   border-radius: 25px;
+}
+.skill:hover {
+  background-color: var(--skill-bg-color);
 }
 
 .projects-container {
@@ -75,11 +114,11 @@ a {
 }
 .img-container {
   position: relative;
-  cursor: pointer; 
+  cursor: pointer;
 }
-.img-container>img {
+.img-container > img {
   max-width: 100%;
-  border-radius: 2rem
+  border-radius: 2rem;
 }
 .blur-container {
   display: flex;
@@ -92,11 +131,11 @@ a {
   width: 100%;
   top: 0%;
   opacity: 0;
-  border-radius: 2rem
+  border-radius: 2rem;
 }
 
-.blur-container:hover{
- opacity: 1;
- -webkit-backdrop-filter: blur(2px);
+.blur-container:hover {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
