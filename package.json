@@ -14,11 +14,11 @@
     "react-dom": "19.0.0-rc-65a56d0e-20241020"
   },
   "devDependencies": {
-    "@types/node": "^22",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^9",
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "eslint": "^9.17.0",
     "eslint-config-next": "15.0.3",
-    "typescript": "^5"
+    "typescript": "^5.7.2"
   }
 }
